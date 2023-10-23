@@ -6,9 +6,9 @@ spec:
   type: git
   params:
     - name: revision
-      value: dotnetcore-3.1-openshift-manual-pipeline
+      value: main
     - name: url
-      value: https://github.com/redhat-developer/s2i-dotnetcore-ex
+      value: https://github.com/Dasaenz499/donettekton.git
 ---
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
@@ -45,4 +45,4 @@ spec:
           #!/usr/bin/bash
           dotnet --info
           cd source
-          dotnet publish -c Release -r linux-x64 --self-contained false "app/app.csproj"
+          dotnet publish -c Release -r linux-x64 --self-contained
