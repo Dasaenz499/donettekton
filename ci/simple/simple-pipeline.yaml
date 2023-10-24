@@ -44,5 +44,5 @@ spec:
       script: |
           #!/usr/bin/bash
           dotnet --info
-          cd app
+          cd source
           dotnet publish -c Release -r linux-x64 --self-contained false "app/app.csproj"
